@@ -17,6 +17,7 @@ import {
   User as UserIcon,
   LogIn
 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 
 const INITIAL_PRODUCTS = [
   {
@@ -75,6 +76,7 @@ export default function App() {
     setTimeout(() => setToast(null), 3000);
   };
 
+  <Analytics />
   // Login handler
   const handleLogin = (e) => {
     e.preventDefault();
